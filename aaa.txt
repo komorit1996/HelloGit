@@ -1,1 +1,72 @@
-aaa
+https://qiita.com/nnahito/items/565f8755e70c51532459
+
+新しいクロスプラットフォームの PowerShell をお試しください https://aka.ms/pscore6
+
+PS C:\Windows\system32> mkdir github
+
+
+    ディレクトリ: C:\Windows\system32
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       2020/12/04     10:44                github
+
+
+PS C:\Windows\system32> cd .\github\
+PS C:\Windows\system32\github> mkdir gittest
+
+
+    ディレクトリ: C:\Windows\system32\github
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       2020/12/04     10:44                gittest
+
+
+PS C:\Windows\system32\github> cd .\gittest\
+PS C:\Windows\system32\github\gittest> git init
+Initialized empty Git repository in C:/Windows/System32/github/gittest/.git/
+PS C:\Windows\system32\github\gittest> dir
+
+
+    ディレクトリ: C:\Windows\system32\github\gittest
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       2020/12/04     10:47              3 aaa.txt
+
+
+PS C:\Windows\system32\github\gittest> git add aaa.txt
+PS C:\Windows\system32\github\gittest> git commit -m "初めてのGitHub！"
+[master (root-commit) a69ac6c] 初めてのGitHub！
+ Committer: Takamasa Komori <komorit@live-style.jp>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 aaa.txt
+PS C:\Windows\system32\github\gittest> git commit -m komorit1996@gmail.com
+On branch master
+nothing to commit, working tree clean
+PS C:\Windows\system32\github\gittest> git commit -m komorit@live-style.jp
+On branch master
+nothing to commit, working tree clean
+PS C:\Windows\system32\github\gittest>
+git remote add origin https://github.com/あなたのUSER_ID/HelloGit.git
+
+
+git remote add origin https://github.com/komorit1996/AutoWorkinput.git
+git push origin master
+
+HelloGit.git
